@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server.Protos";
+
+import "google/protobuf/empty.proto";
+
+// Сообщение для передачи данных питомца
+message Pet {
+    uint32 id = 1;
+    string name = 2;
+    string breed = 3;
+    string animal = 4;
+    uint32 year_of_birth = 5;
+}
+
+// Запрос на получение питомца
+message GetPetRequest {
+    uint32 id = 1;
+}
+
+// Ответ с питомцем
+message GetPetResponse {
+    Pet pet = 1;
+}
+
+// Запрос на создание или обновление питомца
+message CreatePetRequest {
+    Pet pet = 1;
+}
+
+// Определение сервиса
+service PetService {
+    rpc GetPet (GetPetRequest) returns (GetPetResponse);
+    rpc PostPet (CreatePetRequest) returns (google.protobuf.Empty);
+}
+

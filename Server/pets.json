@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "Name": "Летов",
+    "Animal": "Собака",
+    "Breed": "Дворняга",
+    "YearOfBirth": 2024
+  },
+  {
+    "Id": 2,
+    "Name": "Бусинка",
+    "Animal": "Кошка",
+    "Breed": "Персидская",
+    "YearOfBirth": 2024
+  },
+  {
+    "Id": 3,
+    "Name": "Вася",
+    "Animal": "Кошка",
+    "Breed": "Сфинкс",
+    "YearOfBirth": 2024
+  }
+]
